@@ -5,13 +5,13 @@ var input = [
     ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
 ] 
 
-function dataHandling(id,nama,tempat,tanggal,hobi){
-    for (i=0;i<input.length;i++){
-        id=input[i][0]
-        nama=input[i][1]
-        tempat=input[i][2]
-        tanggal=input[i][3]
-        hobi=input[i][4]
+function dataHandling(data){
+    for (i=0;i<data.length;i++){
+        id=data[i][0]
+        nama=data[i][1]
+        tempat=data[i][2]
+        tanggal=data[i][3]
+        hobi=data[i][4]
         console.log(`Nomor ID: ${id}`)
         console.log(`Nama Lengkap: ${nama}`)
         console.log(`TTL: ${tempat} ${tanggal}`)
@@ -19,5 +19,5 @@ function dataHandling(id,nama,tempat,tanggal,hobi){
         console.log('\n')
     }   
 }
-dataHandling()
+dataHandling(input)
 
