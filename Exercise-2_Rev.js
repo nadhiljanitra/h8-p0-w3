@@ -1,6 +1,6 @@
 function balikString(text) {
     var isi = ''
-    for (i = text.length-1; i >=0; i--) {
+    for (var i = text.length-1; i >=0; i--) {
         isi += text[i] 
     }
     return isi;
